@@ -1,0 +1,24 @@
+#include <stdlib.h> // Essa biblioteca é para alocar os dados na memória
+#include <stdio.h>  // Essa biblioteca é para entrada e saída de dados
+#include <locale.h> // Essa biblioteca é para caracteres especiais - PARA WINDOWS
+
+int main(void) {
+    setlocale(LC_ALL, ""); // Configura para usar idioma padrão no sistema - PARA WINDOWS
+
+    printf("Olá, mundo!\n"); // Usei \n para pular linha no meu código
+
+    int idade = 10;
+
+    printf("Digite sua idade:\n");
+    scanf("%d", &idade); // Função usada para pegar valores digitados pelo usuário
+
+    if (idade > 10) {
+        printf("A idade %d é maior que 10\n", idade);
+    } else {
+        printf("A idade %d é menor ou igual a 10\n", idade);
+    }
+
+    system("pause"); // Parar o programa no Windows - não deixa a tela fechar
+
+    return 0;
+}
